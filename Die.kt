@@ -10,7 +10,7 @@ class Die {
     //Properties to describe the die
     val name: String
     val numberOfSides: Int
-    var currentSideUp: Int
+    var currentSideUp: Int = 1
 
     //A 0 argument constructor
     constructor() {
@@ -34,7 +34,7 @@ class Die {
     }
 
     //roll method
-    fun roll() {
+    public fun roll() {
         currentSideUp = Random.nextInt(1, numberOfSides + 1)
     }
 
